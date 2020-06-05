@@ -9,7 +9,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 // ... or using `require()`
 // const { GraphQLServer } = require('graphql-yoga')
 var server = new _graphqlYoga.GraphQLServer({
-  typeDefs: "graphql/schema.graphql",
+  typeDefs: "./graphql/schema.graphql",
   resolvers: _resolver["default"]
 });
 server.start(function () {
