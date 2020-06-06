@@ -4,10 +4,10 @@
   "description": "movieql with graphql server graphql yoga",
   "main": "index.js",
   "scripts": {
-    "start": "cd src && npx babel-node index.js",
+    "start": "cd build && node index.js",
     "dev": "cd src && nodemon --exec babel-node index.js",
     "prebuild": "cd build && rm -rf *",
-    "build": "npx babel src -d build",
+    "build": "npx babel src -d build && cp src/graphql/schema.graphql build/graphql/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,7 @@
   "author": "eundeok lee",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.10.1",
     "axios": "^0.19.2",
     "graphql-yoga": "^1.18.3"
   },

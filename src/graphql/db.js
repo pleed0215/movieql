@@ -1,4 +1,5 @@
 import axios from "axios";
+import "@babel/polyfill";
 
 const API_URL = "https://yts.mx/api/v2/";
 const MOVIE_LIST_URL = `${API_URL}list_movies.json`;
