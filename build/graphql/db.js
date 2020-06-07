@@ -127,21 +127,19 @@ var getSuggestions = /*#__PURE__*/function () {
           case 4:
             _yield$axios$get3 = _context3.sent;
             movies = _yield$axios$get3.data.data.movies;
-            console.log(movies);
             return _context3.abrupt("return", movies);
 
-          case 10:
-            _context3.prev = 10;
+          case 9:
+            _context3.prev = 9;
             _context3.t0 = _context3["catch"](0);
-            console.log(_context3.t0);
             return _context3.abrupt("return", null);
 
-          case 14:
+          case 12:
           case "end":
             return _context3.stop();
         }
       }
-    }, _callee3, null, [[0, 10]]);
+    }, _callee3, null, [[0, 9]]);
   }));
 
   return function getSuggestions(_x4) {

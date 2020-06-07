@@ -58,10 +58,8 @@ export const getSuggestions = async (id) => {
         movie_id: id,
       },
     });
-    console.log(movies);
     return movies;
   } catch (error) {
-    console.log(error);
     return null;
   }
 };
